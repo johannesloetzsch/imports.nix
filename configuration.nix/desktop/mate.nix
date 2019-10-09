@@ -10,7 +10,7 @@
   };
 
   ## setup gio - maybe this should be upstreamed to pkgs.mate
-  services.gnome3.gvfs.enable = true;
+  services.gvfs.enable = true;
   environment.variables.GIO_EXTRA_MODULES = [
     "${lib.getLib pkgs.gnome3.dconf}/lib/gio/modules"
     "${pkgs.gnome3.glib-networking.out}/lib/gio/modules"
