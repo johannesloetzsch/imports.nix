@@ -3,7 +3,8 @@
   services.xserver = {
     enable = true;
     desktopManager.mate.enable = true;
-    displayManager.slim.enable = true;
+    displayManager.sddm.enable = true;
+    #displayManager.slim.enable = true;  ## not longer maintained
     #displayManager.lightdm.enable = true;  ## problems when locking sceen at suspend?
     #displayManager.gdm.enable = true;  ## runs its own pulseaudio instance -> problem for blueman
   };
