@@ -10,6 +10,10 @@
 
     gnumake
 
-    jre
+    jre maven
+
+
+    pkgs_unstable.dbeaver
+    robo3t
   ];
 }
