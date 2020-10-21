@@ -22,6 +22,7 @@
     package = pkgs.pulseaudioFull;
   };
   hardware.bluetooth.enable = true;
+  services.blueman.enable = true;
 
   programs.gnupg.agent = {
     enable = true;

@@ -13,4 +13,6 @@
       "cjpalhdlnbpafiamejdnhcphjbkeiagm"  # ublock origin
     ];
   };
+
+  services.blueman-applet.enable = true;
 }
