@@ -2,6 +2,8 @@
 {
   home.packages = with pkgs; [
     libreoffice ding
+
+    pavucontrol mpv youtube-dl
   ];
 
   programs.chromium = {

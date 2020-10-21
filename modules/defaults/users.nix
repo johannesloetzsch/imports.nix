@@ -2,7 +2,7 @@
 {
   users.users.j03 = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" ];
+    extraGroups = [ "wheel" "networkmanager" "audio" ];
   };
 
   home-manager.users.j03 = { pkgs, config, ... }: {
