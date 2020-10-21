@@ -2,8 +2,9 @@
 {
   system.stateVersion = "20.09";
 
-  imports =
-    [ (modulesPath + "/installer/scan/not-detected.nix")
+  imports = [
+      (modulesPath + "/installer/scan/not-detected.nix")
+      ../defaults/tmp/neo4j.nix
     ];
 
   boot.loader.grub.enable = true;
