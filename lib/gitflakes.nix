@@ -11,10 +11,10 @@
                                    else throw "Refusing to build from a dirty Git tree!";
 
     environment.etc."nixos/.git/hooks/post-commit" = {
-      mode = "0500";
+      mode = "0550"; group = "wheel";
       text = ''
         #!/usr/bin/env sh
-        nixos-rebuild switch
+        sudo nixos-rebuild switch
       '';
     };
 

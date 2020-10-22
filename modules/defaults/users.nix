@@ -10,6 +10,7 @@
       ./home-manager/base.nix
       ./home-manager/office.nix
       ./home-manager/admin.nix
+      ./home-manager/dev/git.nix
       ./home-manager/dev/web.nix
       ./home-manager/dev/embedded.nix
     ];
