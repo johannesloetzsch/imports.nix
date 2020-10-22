@@ -9,6 +9,7 @@
     imports = [
       ./home-manager/base.nix
       ./home-manager/office.nix
+      ./home-manager/multimedia.nix
       ./home-manager/admin.nix
       ./home-manager/dev/git.nix
       ./home-manager/dev/web.nix

@@ -1,18 +1,20 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
+    pass
     libreoffice ding
-
-    pavucontrol mpv youtube-dl
+    thunderbird signal-desktop
   ];
 
   programs.chromium = {
     enable = true;
     extensions = [
+      "naepdomgkenhinolocfifgehidddafch"  # browserpass
+
       "gcbommkclmclpchllfjekcdonpmejbdp"  # https everywhere
       "cjpalhdlnbpafiamejdnhcphjbkeiagm"  # ublock origin
     ];
   };
 
-  services.blueman-applet.enable = true;
+  programs.browserpass.enable = true;
 }
