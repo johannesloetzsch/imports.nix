@@ -4,8 +4,10 @@
 {
   environment.systemPackages = with pkgs; [
     vim tmux
-    htop atop iotop iftop
     wget curl
+    file
+    htop atop iotop iftop
+    nix-index
   ];
 
   time.timeZone = "Europe/Berlin";
