@@ -30,6 +30,7 @@
           ./modules/defaults/networking.nix
           ./modules/defaults/desktop.nix
           ./modules/defaults/users.nix
+          ./modules/defaults/virtualization/docker.nix
         ];
       };
   
