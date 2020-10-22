@@ -14,6 +14,7 @@
       ./home-manager/dev/base.nix
       ./home-manager/dev/git.nix
       ./home-manager/dev/web.nix
+      ./home-manager/dev/mobile.nix
       ./home-manager/dev/embedded.nix
     ];
   };

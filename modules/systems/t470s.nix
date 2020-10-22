@@ -36,4 +36,6 @@
     ];
 
   powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
+
+  nixpkgs.config.allowUnfree = true;  ## required by android-studio
 }
