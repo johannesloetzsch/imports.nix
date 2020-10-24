@@ -4,7 +4,7 @@
 
   imports = [
       (modulesPath + "/installer/scan/not-detected.nix")
-      ../defaults/tmp/neo4j.nix
+      #../defaults/tmp/neo4j.nix
     ];
 
   boot.loader.grub.enable = true;

@@ -13,7 +13,10 @@
     desktopManager.mate.enable = true;
   };
 
-  services.printing.enable = true;
+  services.printing = {
+    enable = true;
+    drivers = with pkgs; [ gutenprint hplip splix ];
+  };
 
   sound.enable = true;
   hardware.pulseaudio = {
