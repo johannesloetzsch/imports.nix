@@ -11,6 +11,7 @@
   boot.loader.grub.version = 2;
   boot.loader.grub.device = "/dev/disk/by-id/nvme-eui.0000000001000000e4d25c1042e25101-part1"; # or "nodev" for efi only
   boot.loader.grub.forceInstall = true;
+  boot.loader.grub.useOSProber = true;
   boot.loader.grub.efiSupport = true;
   #boot.loader.grub.efiInstallAsRemovable = true;
   boot.loader.efi.canTouchEfiVariables = true;
