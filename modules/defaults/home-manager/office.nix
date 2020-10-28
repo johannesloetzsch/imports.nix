@@ -3,6 +3,7 @@
   home.packages = with pkgs; [
     pass
     libreoffice ding
+    gimp imagemagick
     thunderbird signal-desktop
   ];
 
