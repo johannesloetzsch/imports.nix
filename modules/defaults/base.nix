@@ -3,11 +3,11 @@
 { config, pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
+    nix-index
     vim tmux
     wget curl
-    file
     htop atop iotop iftop
-    nix-index
+    file bc
   ];
 
   time.timeZone = "Europe/Berlin";
