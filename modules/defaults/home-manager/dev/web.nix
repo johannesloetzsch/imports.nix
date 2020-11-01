@@ -19,4 +19,6 @@
       coc-tsserver
     ];
   };
+
+  home.packages = with pkgs; [ nodejs_latest ];
 }
