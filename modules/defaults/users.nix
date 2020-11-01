@@ -17,6 +17,7 @@
       ./home-manager/dev/web.nix
       ./home-manager/dev/mobile.nix
       ./home-manager/dev/embedded.nix
+      ./home-manager/dev/clojure.nix
     ];
   };
 }
