@@ -5,6 +5,7 @@
     userEmail = "git@johannesloetzsch.de";
     userName = "Johannes Lötzsch";
     ignores = [ "*.swp" ];
+    extraConfig = { pull.rebase = true; };
   };
 
   home.packages = with pkgs; [
