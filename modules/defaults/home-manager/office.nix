@@ -3,7 +3,7 @@
   home.packages = with pkgs; [
     pass
     libreoffice ding
-    gimp imagemagick ffmpeg
+    simple-scan xsane gimp imagemagick ffmpeg
     thunderbird signal-desktop
   ];
 

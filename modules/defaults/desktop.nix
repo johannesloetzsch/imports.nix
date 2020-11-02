@@ -18,6 +18,11 @@
     drivers = with pkgs; [ gutenprint hplip splix ];
   };
 
+  hardware.sane = {
+    enable = true;
+    extraBackends = with pkgs; [ hplipWithPlugin ];
+  };
+
   sound.enable = true;
   hardware.pulseaudio = {
     enable = true;
