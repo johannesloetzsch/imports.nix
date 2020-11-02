@@ -1,6 +1,7 @@
 { config, lib, pkgs, modulesPath, ... }:
 {
   system.stateVersion = "20.09";
+  networking.hostName = "t470s";
 
   imports = [
       (modulesPath + "/installer/scan/not-detected.nix")

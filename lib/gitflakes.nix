@@ -14,7 +14,8 @@
       mode = "0550"; group = "wheel";
       text = ''
         #!/usr/bin/env sh
-        sudo nixos-rebuild switch
+        BRANCH="$(git rev-parse --abbrev-ref HEAD)"
+        sudo nixos-rebuild switch --profile-name $BRANCH
       '';
     };
 
