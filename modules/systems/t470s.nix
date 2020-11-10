@@ -39,5 +39,10 @@
 
   powerManagement.cpuFreqGovernor = lib.mkDefault "powersave";
 
+  services.thinkfan.enable = true;
+  boot.extraModprobeConfig = ''
+    options thinkpad_acpi fan_control=1
+  '';
+
   nixpkgs.config.allowUnfree = true;  ## required by android-studio
 }
