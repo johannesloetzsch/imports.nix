@@ -3,6 +3,7 @@
   users.users.j03 = {
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "audio" "lp" "scanner"
+                    "dialout"
                     "docker" ];
   };
 
