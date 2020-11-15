@@ -5,6 +5,7 @@
     libreoffice ding
     simple-scan xsane gimp imagemagick ffmpeg
     thunderbird signal-desktop
+    texlive.combined.scheme-full
   ];
 
   programs.chromium = {
