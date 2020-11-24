@@ -23,5 +23,6 @@
   home.packages = with pkgs; [
     nodejs_latest
     robo3t
+    heroku
   ];
 }
