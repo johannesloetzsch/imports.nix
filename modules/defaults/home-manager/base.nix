@@ -2,6 +2,7 @@
 {
   home.packages = with pkgs; [
     networkmanagerapplet
+    bat
   ];
 
   services.clipmenu.enable = true;
