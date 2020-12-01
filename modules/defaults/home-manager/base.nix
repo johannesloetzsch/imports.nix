@@ -2,7 +2,9 @@
 {
   home.packages = with pkgs; [
     networkmanagerapplet
+    unzip
     bat
+    libfaketime
   ];
 
   services.clipmenu.enable = true;
