@@ -10,5 +10,8 @@
   nix.daemonNiceLevel = 19;
 
   nix.autoOptimiseStore = true;
-  nix.gc.automatic = true;
+  nix.gc = {
+    automatic = true;
+    dates = "weekly";
+  };
 }
