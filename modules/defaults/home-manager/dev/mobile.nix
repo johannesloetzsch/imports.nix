@@ -1,8 +1,8 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    fdroidserver
-    scrcpy  ## contains adb
     android-studio
+    scrcpy  ## contains adb
+    fdroidserver jdk
   ];
 }
