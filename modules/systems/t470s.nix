@@ -45,4 +45,5 @@
   '';
 
   nixpkgs.config.allowUnfree = true;  ## required by android-studio
+  boot.supportedFilesystems = [ "ntfs" ];
 }
