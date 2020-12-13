@@ -27,4 +27,6 @@
     enable = true;
     nssmdns = true;
   };
+
+  environment.systemPackages = with pkgs; [ macchanger ];
 }
