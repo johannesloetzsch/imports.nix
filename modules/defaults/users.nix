@@ -4,7 +4,8 @@
     isNormalUser = true;
     extraGroups = [ "wheel" "networkmanager" "audio" "lp" "scanner"
                     "dialout"
-                    "docker" ];
+                    "docker"
+                    "adbusers"];
   };
 
   home-manager.users.j03 = { pkgs, config, ... }: {
@@ -21,4 +22,6 @@
       ./home-manager/dev/clojure.nix
     ];
   };
+
+  programs.adb.enable = true;
 }
