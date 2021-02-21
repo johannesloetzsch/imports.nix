@@ -2,7 +2,7 @@
   description = "J03s NixOS configurations";
 
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixos-20.09";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     home-manager.url = "github:nix-community/home-manager";
     nixos-hardware.url = "github:NixOS/nixos-hardware/master";
   };
