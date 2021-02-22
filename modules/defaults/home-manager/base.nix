@@ -5,6 +5,8 @@
     unzip
     bat
     libfaketime
+
+    dmenu  ## required by clipmenu
   ];
 
   services.clipmenu.enable = true;
