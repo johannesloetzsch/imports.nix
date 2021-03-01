@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    bind.dnsutils
+    bind.dnsutils fping
     traceroute nmap-graphical
     tcpdump mitmproxy
   ];

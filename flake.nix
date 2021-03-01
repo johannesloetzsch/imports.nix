@@ -9,6 +9,9 @@
 
   outputs = { self, nixpkgs, home-manager, nixos-hardware }:
   let
+    system = "x86_64-linux";
+    pkgs = import nixpkgs { inherit system; };
+
     base-modules = [
       ./modules/defaults/nix.nix
       (import ./lib/gitflakes.nix {flake=self;})
@@ -20,6 +23,10 @@
     ];
   in
   {
+    legacyPackages.x86_64-linux = {
+      inherit pkgs;
+    };
+
     nixosConfigurations = {
   
       t470s = nixpkgs.lib.nixosSystem {
