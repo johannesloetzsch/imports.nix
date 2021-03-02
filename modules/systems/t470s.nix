@@ -46,4 +46,7 @@
 
   nixpkgs.config.allowUnfree = true;  ## required by android-studio
   boot.supportedFilesystems = [ "ntfs" ];
+
+  ## required for pergola
+  networking.extraHosts = "127.0.0.3 keycloak";
 }
