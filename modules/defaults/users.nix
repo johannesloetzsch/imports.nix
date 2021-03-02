@@ -15,6 +15,7 @@
       ./home-manager/multimedia.nix
       ./home-manager/admin.nix
       ./home-manager/dev/base.nix
+      ./home-manager/dev/nvim-coc.nix
       ./home-manager/dev/git.nix
       ./home-manager/dev/embedded.nix
       ./home-manager/dev/web.nix

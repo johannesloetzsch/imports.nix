@@ -11,15 +11,6 @@
 
   programs.firefox.enable = true;
 
-  programs.neovim = {
-    enable = true;
-    withNodeJs = true;
-    plugins = with pkgs.vimPlugins; [
-      coc-nvim
-      coc-tsserver
-    ];
-  };
-
   home.packages = with pkgs; [
     nodejs_latest
     robo3t
