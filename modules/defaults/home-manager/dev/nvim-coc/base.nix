@@ -26,7 +26,7 @@
           """ When holding the cursor: Highlight the symbol and its references and show the documentation
           autocmd CursorHold * silent call CocActionAsync('highlight')
           "autocmd CursorHold * silent call CocActionAsync('doHover')
-          "nmap <silent> gh :call CocActionAsync('doHover')<cr>
+          nmap <silent> gh :call CocActionAsync('doHover')<cr>
         '';
       }
     ];
