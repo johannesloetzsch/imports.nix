@@ -4,6 +4,7 @@
     ./nvim-coc/base.nix
     ./nvim-coc/spell-checker.nix
     ./nvim-coc/tsserver.nix
+    ./nvim-coc/rust-analyzer.nix
 
     ## https://github.com/neoclide/coc.nvim/wiki/Language-servers
     ## via ~/.config/nvim/coc-settings.json
