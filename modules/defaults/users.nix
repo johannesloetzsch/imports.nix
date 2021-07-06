@@ -11,8 +11,11 @@
   home-manager.users.j03 = { pkgs, config, ... }: {
     imports = [
       ./home-manager/base.nix
+
       ./home-manager/office.nix
       ./home-manager/multimedia.nix
+      ./home-manager/nextcloud.nix
+
       ./home-manager/admin.nix
       ./home-manager/dev/base.nix
       ./home-manager/dev/nvim-coc.nix
