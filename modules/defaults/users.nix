@@ -14,7 +14,7 @@
 
       ./home-manager/office.nix
       ./home-manager/multimedia.nix
-      ./home-manager/nextcloud.nix
+      #./home-manager/nextcloud.nix
 
       ./home-manager/admin.nix
       ./home-manager/dev/base.nix
