@@ -1,6 +1,6 @@
 { config, lib, pkgs, modulesPath, ... }:
 {
-  system.stateVersion = "20.09";
+  system.stateVersion = "21.11";
   networking.hostName = "t470s";
 
   imports = [
