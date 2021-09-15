@@ -1,15 +1,18 @@
 { config, lib, pkgs, modulesPath, ... }:
 {
-  system.stateVersion = "21.11";
+  system.stateVersion = "23.11";
   networking.hostName = "t470s";
 
   imports = [
       (modulesPath + "/installer/scan/not-detected.nix")
+      #../defaults/tmp/mongodb.nix
+      #../defaults/tmp/kibana.nix
       #../defaults/tmp/neo4j.nix
+      ../defaults/fonts.nix
     ];
 
   boot.loader.grub.enable = true;
-  boot.loader.grub.version = 2;
+  #boot.loader.grub.version = 2;
   boot.loader.grub.device = "/dev/disk/by-id/nvme-eui.0000000001000000e4d25c1042e25101-part1"; # or "nodev" for efi only
   boot.loader.grub.forceInstall = true;
   boot.loader.grub.useOSProber = true;

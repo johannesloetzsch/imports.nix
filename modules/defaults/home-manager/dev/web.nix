@@ -12,7 +12,7 @@
   programs.firefox.enable = true;
 
   home.packages = with pkgs; [
-    nodejs_latest
+    nodejs_latest yarn nodePackages.pnpm
     robo3t
     heroku
   ];

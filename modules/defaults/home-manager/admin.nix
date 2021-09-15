@@ -2,7 +2,7 @@
 {
   home.packages = with pkgs; [
     bind.dnsutils fping speedtest-cli
-    traceroute nmap-graphical
+    traceroute nmap
     tcpdump mitmproxy
   ];
 }

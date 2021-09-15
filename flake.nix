@@ -41,6 +41,7 @@
           ./modules/defaults/desktop.nix
           ./modules/defaults/users.nix
           ./modules/defaults/virtualization/docker.nix
+          ./modules/defaults/virtualization/kvm.nix
           ({ pkgs, ... }: {
             nix.nixPath = [ "nixpkgs=${nixpkgs}" ];  ## get rid of channels
           })

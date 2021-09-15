@@ -6,9 +6,9 @@
 (
   { pkgs, ... }:
   {
-    system.configurationRevision = if flake ? rev
-                                   then flake.rev
-                                   else throw "Refusing to build from a dirty Git tree!";
+#    system.configurationRevision = if flake ? rev
+#                                   then flake.rev
+#                                   else throw "Refusing to build from a dirty Git tree!";
 
     environment.etc."nixos/.git/hooks/post-commit" = {
       mode = "0550"; group = "wheel";

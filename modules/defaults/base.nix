@@ -8,6 +8,7 @@
     wget curl
     htop atop iotop iftop
     file bc
+    babashka rlwrap
   ];
 
   time.timeZone = "Europe/Berlin";

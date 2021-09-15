@@ -9,6 +9,7 @@
   };
 
   home-manager.users.j03 = { pkgs, config, ... }: {
+    home.stateVersion = "21.11";
     imports = [
       ./home-manager/base.nix
 

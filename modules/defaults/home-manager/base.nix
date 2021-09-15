@@ -2,12 +2,21 @@
 {
   home.packages = with pkgs; [
     networkmanagerapplet
+
     unzip
-    bat
+    bat #silver-searcher
+    jq
+
     libfaketime
 
     dmenu  ## required by clipmenu
   ];
+
+  programs.bash.enable = true;
+  programs.starship = {
+    enable = true;
+    enableBashIntegration = true;
+  };
 
   services.clipmenu.enable = true;
 
