@@ -6,7 +6,15 @@
   };
 
   outputs = { self, nixpkgs }:
-  {
+  let
+    system = "x86_64-linux";
+    pkgs = import nixpkgs { inherit system; };
+  in
+  rec {
     nixosModules = import ./modules;
+
+    ## A preevaluated version of nixosModules, it can be inspected by:
+    ## > nix eval .#nixosModulesEvaluated --json | jq
+    nixosModulesEvaluated = import ./modules/evaluated.nix { inherit pkgs; };
   };
 }

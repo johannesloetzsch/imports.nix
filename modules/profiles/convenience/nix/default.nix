@@ -1,1 +1,5 @@
-import ./trusted-users.nix
+{
+  imports = [
+    ./trusted-users.nix
+  ];
+}

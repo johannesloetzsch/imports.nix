@@ -1,1 +1,5 @@
-import ./flakes.nix
+{
+  imports = [
+    ./flakes.nix
+  ];
+}
