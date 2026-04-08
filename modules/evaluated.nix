@@ -1,8 +1,8 @@
-{ pkgs, ... }:
+{ pkgs, pretty ? false, ... }:
 
 let
   modules = import ./.;
-  evaluateModules = import ../lib/evaluateModules { inherit pkgs; };
+  evaluateModules = import ../lib/evaluateModules { inherit pkgs pretty; };
 in
 {
   ## Merge the modules nested in the attrset `profiles`

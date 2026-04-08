@@ -5,9 +5,12 @@
 }:
 
 let
-  mockOption = lib.mkOption { type=lib.types.anything; };
+  mockOption = lib.mkOption {
+   type = lib.types.anything;
+   default = null;
+  };
+  toplevelAttributes = [ "boot" "environment" "nix" "networking" ];
 in
 {
-  ## Here we add all toplevel attributes that should be mocked
-  options.nix = mockOption;
+  options = builtins.listToAttrs (map (k: { name = k; value = mockOption; }) toplevelAttributes);
 }

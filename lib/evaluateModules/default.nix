@@ -2,7 +2,9 @@
   pkgs ? import <nixpkgs> {},
   lib ? pkgs.lib,
 
+  pretty ? false,
   mockOptionsModule ? import ./mockNixosModules.nix,
+  mockPkgs ? if pretty then (lib.mapAttrs (k: v: k) pkgs) else pkgs,
   ...
 }:
 
@@ -10,5 +12,12 @@
 modules:
 
 (lib.evalModules {
-  modules = modules ++ [ mockOptionsModule ];
+  modules = modules ++ [
+    mockOptionsModule
+    { 
+      config._module.args = {
+        pkgs = mockPkgs;
+      };
+    }
+  ];
 }).config
