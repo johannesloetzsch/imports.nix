@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 {
   environment.systemPackages = with pkgs; [
     vim
@@ -6,4 +6,6 @@
     tmux
     htop
   ];
+
+  environment.variables."EDITOR" = "vim";
 }
