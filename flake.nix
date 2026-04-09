@@ -17,5 +17,18 @@
     ## > nix eval .#nixosModulesEvaluatedPretty --json | jq
     nixosModulesEvaluated = import ./modules/evaluated.nix { inherit pkgs; };
     nixosModulesEvaluatedPretty = import ./modules/evaluated.nix { inherit pkgs; pretty = true; };
+
+    templates = {
+      default = {
+        path = ./templates/default;
+        description = "A minimal flake, providing full-featured nixosConfigurations with minimal effort.";
+        welcomeText = ''
+          ## Getting Started
+          - run `nix flake new --template github:johannesloetzsch/imports.nix#default ./my-new-nixos`
+          - run `nix run github:nix-community/disko/latest -- --mode destroy,format,mount --flake ./my-new-nixos#default`
+          - run `nixos-install --flake ./my-new-nixos#default`
+        '';
+      };
+    };
   };
 }
