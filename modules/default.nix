@@ -20,5 +20,6 @@
 
     ## desktop environments
     desktop_mate_essentials = import ./profiles/desktop_mate_essentials;
+    desktop_mate_fixes = import ./profiles/desktop_mate_fixes;
   };
 }
