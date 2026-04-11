@@ -39,6 +39,7 @@
       imports-nix.nixosModules.profiles.admin_convenience
       imports-nix.nixosModules.profiles.desktop_mate_essentials
       imports-nix.nixosModules.profiles.desktop_mate_fixes
+      imports-nix.nixosModules.profiles.desktop_mate_convenience
     ];
 
     nixosConfigurations.default = self.nixosConfigurations."${config.networking.hostName}";
